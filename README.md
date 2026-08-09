@@ -1,14 +1,1374 @@
-# Welcome to your Lovable project
+# Daily Build
+
+Generate a website
+
+ABTALKS — 60-DAY CODING CHALLENGE
+
+Premium Responsive Platform — Light + Dark Mode
+
+Build a complete, polished, premium redesign of the ABTalks 60-Day Coding Challenge platform using:
+
+React
+
+TypeScript
+
+Tailwind CSS
+
+React Router
+
+Local/mock JSON data
+
+LocalStorage
+
+Lucide icons
+
+This is a frontend prototype.
+
+Do NOT build:
+
+Authentication
+
+Backend
+
+Production database
+
+Recruiter dashboard
+
+Admin panel
+
+1. CORE PRODUCT
+
+ABTalks is a 60-day coding challenge for college students.
+
+Students:
+
+Choose a coding track
+
+Complete one practical challenge every day
+
+Build a real project
+
+Get help when stuck
+
+Submit proof of work
+
+Earn XP and badges
+
+Build a public portfolio
+
+Share progress with the community
+
+Continue the next day
+
+The most important product principle is:
+
+At any moment, the student should know exactly what to do next.
+
+
+
+The product should feel:
+
+Clear + Focused + Professional + Motivating + Modern
+
+2. PRIMARY USER SCENARIO
+
+Imagine a college student.
+
+They have been in college all day.
+
+It is 11:30 PM.
+
+They open ABTalks on a 390px phone.
+
+They should immediately understand:
+
+Where they are
+
+What today's challenge is
+
+How much time it takes
+
+What they need to build
+
+Where to get help
+
+How to submit proof
+
+What happens after submission
+
+The interface should NOT overwhelm them.
+
+The dashboard should essentially communicate:
+
+
+
+"Here's today's task. Let's get it done."
+
+3. ROUTES
+
+Create exactly these primary routes:
+
+/ /dashboard /day/12 
+
+All routes must work directly.
+
+Use React Router.
+
+4. LIGHT + DARK MODE
+
+Add a fully functional theme switcher.
+
+Users must be able to switch between:
+
+Light Mode
+
+Blue-Grey + Orange
+
+and
+
+Dark Mode
+
+Charcoal + Cyan
+
+The theme switcher must work throughout the entire application.
+
+Do NOT create separate pages for themes.
+
+The same components should dynamically change their colors based on the selected theme.
+
+5. THEME SWITCHER
+
+Add a theme control in the top navigation/profile menu.
+
+On mobile:
+
+Place a small theme icon button in the header.
+
+Clicking it should open a compact theme selector:
+
+Appearance ☀ Light ◐ Dark 
+
+Alternatively, use a polished toggle:
+
+☀ ───── ◐ 
+
+The selected theme must be visually obvious.
+
+Add a smooth transition when switching themes.
+
+Do NOT use a huge settings panel.
+
+6. THEME PERSISTENCE
+
+Use localStorage.
+
+If the user selects Dark Mode:
+
+Refreshing the page should preserve Dark Mode.
+
+Navigating between routes should preserve Dark Mode.
+
+All components should remain in Dark Mode.
+
+If the user selects Light Mode:
+
+The same behavior should apply.
+
+Default theme:
+
+Light Mode
+
+7. OPTIONAL SYSTEM THEME
+
+Also provide:
+
+Light Dark System 
+
+If "System" is selected:
+
+Use the device's preferred color scheme.
+
+However, keep:
+
+Light Mode as the default.
+
+8. LIGHT MODE DESIGN
+
+Use the following palette.
+
+Background
+
+#F8FAFC #F1F5F9 
+
+Cards
+
+#FFFFFF 
+
+Primary Blue-Grey
+
+#334155 #475569 #64748B 
+
+Borders
+
+#E2E8F0 #CBD5E1 
+
+Orange
+
+#F97316 
+
+Light Orange
+
+#FFEDD5 
+
+Text
+
+#0F172A #64748B 
+
+Success
+
+#16A34A 
+
+Error
+
+#DC2626 
+
+Orange should be used primarily for:
+
+Primary CTA
+
+Active states
+
+Streak
+
+Important highlights
+
+Progress
+
+Challenge actions
+
+Blue-grey should dominate the interface.
+
+9. DARK MODE DESIGN
+
+Dark Mode should use the Charcoal + Cyan visual style.
+
+Background
+
+#0B0F12 #11161A #151B20 
+
+Cards
+
+#161D22 #1B2329 
+
+Primary Charcoal
+
+#20282E #29343B 
+
+Borders
+
+#2A343B #34414A 
+
+Primary Cyan
+
+#22D3EE 
+
+Bright Cyan
+
+#06B6D4 
+
+Soft Cyan
+
+#67E8F9 
+
+Text
+
+#F8FAFC 
+
+Secondary text
+
+#94A3B8 
+
+Success
+
+#22C55E 
+
+Error
+
+#F87171 
+
+Cyan should be used for:
+
+Primary buttons
+
+Active navigation
+
+Progress
+
+Important highlights
+
+AI features
+
+Challenge actions
+
+Keep the dark theme sophisticated.
+
+Avoid excessive neon glow.
+
+Use subtle cyan highlights rather than making the entire interface glow.
+
+10. THEME MAPPING
+
+The same UI should adapt naturally.
+
+Light
+
+Blue-grey structure + Orange actions 
+
+Dark
+
+Charcoal structure + Cyan actions
+
+
+
+For example:
+
+Primary Button
+
+Light:
+
+Orange
+
+Dark:
+
+Cyan
+
+Progress
+
+Light:
+
+Orange
+
+Dark:
+
+Cyan
+
+Streak
+
+Light:
+
+Orange
+
+Dark:
+
+Cyan
+
+AI Mentor
+
+Light:
+
+Blue-grey card + orange accent
+
+Dark:
+
+Charcoal card + cyan accent
+
+Do NOT introduce purple.
+
+11. DARK MODE SHOULD NOT FEEL LIKE A DIFFERENT PRODUCT
+
+Important:
+
+Dark Mode must use exactly the same:
+
+Layout
+
+Components
+
+Navigation
+
+Content
+
+User flow
+
+Information hierarchy
+
+Only the visual theme changes.
+
+Do not redesign the application separately for dark mode.
+
+12. RESPONSIVE DESIGN
+
+Primary viewport:
+
+390px
+
+Design mobile-first.
+
+Requirements:
+
+No horizontal scrolling
+
+No clipped text
+
+No overlapping components
+
+Touch-friendly buttons
+
+Comfortable form inputs
+
+Readable typography
+
+Single-column mobile layouts
+
+Sticky bottom navigation
+
+Responsive tablet
+
+Responsive desktop
+
+Test the layout mentally at:
+
+390px 768px 1024px 1440px 
+
+13. LANDING PAGE /
+
+Purpose:
+
+The user must understand:
+
+What ABTalks is
+
+Why they should join
+
+What they have to do
+
+How to start
+
+14. LANDING HERO
+
+Logo:
+
+ABTALKS
+
+Headline:
+
+Build every day. Become impossible to ignore.
+
+Description:
+
+A 60-day coding challenge that turns daily practice into real projects, public proof, and a portfolio you can show.
+
+Stats:
+
+60 Days 60 Builds 1 Growing Portfolio 
+
+Primary CTA:
+
+Start the Challenge
+
+Navigate to:
+
+/dashboard 
+
+Secondary CTA:
+
+How It Works
+
+Scroll to the How It Works section.
+
+15. HERO VISUAL
+
+Create a compact app preview.
+
+Show:
+
+DAY 12 Responsive Portfolio ████████░░ 20% 🔥 11 day streak GitHub ✓ LinkedIn ✓ Deployed ✓ 
+
+The colors must automatically adapt to the selected theme.
+
+Light:
+
+Orange accents.
+
+Dark:
+
+Cyan accents.
+
+16. HOW IT WORKS
+
+Create three simple steps:
+
+01 Pick a Track
+
+Web Development
+
+AI & Machine Learning
+
+Data Science
+
+App Development
+
+UI/UX
+
+02 Build Every Day
+
+Complete one practical challenge every day.
+
+03 Share Your Proof
+
+Submit:
+
+GitHub
+
+LinkedIn
+
+Deployment URL when required
+
+17. WHY JOIN
+
+Create four cards:
+
+Build Consistency
+
+Turn coding into a daily habit.
+
+Build Real Projects
+
+Learn by actually creating things.
+
+Build a Portfolio
+
+Turn 60 days of work into visible proof.
+
+Build in Public
+
+Share your progress and become visible.
+
+18. 60-DAY JOURNEY
+
+Show:
+
+Day 1 Start Day 15 Habit Day 30 Halfway Day 45 Momentum Day 60 Showcase 
+
+Keep this simple.
+
+19. FINAL CTA
+
+Your portfolio won't build itself.
+
+Start with Day 1. Build something today.
+
+Button:
+
+Start My 60-Day Journey
+
+20. DASHBOARD /dashboard
+
+Purpose:
+
+Answer
+
+:
+
+"Where am I and what do I need to do today?
+
+"
+
+Do not overload the dashboard.
+
+21. DASHBOARD HEADER
+
+Show:
+
+ABTALKS
+
+Notification
+
+Avatar
+
+Theme switcher
+
+Greeting:
+
+Good evening, Ajith 👋
+
+Subtitle:
+
+Day 12 of your 60-day journey
+
+22. STREAK
+
+Display:
+
+🔥 11 day streak
+
+One more day to make it 12.
+
+Show previous seven days.
+
+The streak color adapts:
+
+Light → Orange
+
+Dark → Cyan
+
+23. TODAY'S CHALLENGE
+
+This must be the largest and most important dashboard card.
+
+DAY 12
+
+Build a Responsive Student Portfolio
+
+Description:
+
+Create a mobile-first portfolio with a hero section, skills, projects and contact CTA.
+
+Metadata:
+
+2–3 hours Intermediate HTML · CSS · Responsive Design 
+
+Primary CTA:
+
+Start Day 12
+
+Navigate to:
+
+/day/12 
+
+24. PROGRESS
+
+Display:
+
+12 / 60 days
+
+20%
+
+48 days remaining
+
+Use:
+
+Light → Orange progress
+
+Dark → Cyan progress
+
+25. XP
+
+Display:
+
+2,450 XP
+
+Also:
+
+12 Builds
+
+11 Day Streak
+
+Keep this compact.
+
+Do NOT use a fixed Momentum Score.
+
+26. ACHIEVEMENTS
+
+Show:
+
+First Build
+
+7-Day Builder
+
+First Deployment
+
+Build in Public
+
+10 Builds
+
+Use compact cards.
+
+Button:
+
+View All
+
+Open modal/sheet.
+
+27. WEEKLY REVIEW
+
+Card:
+
+This Week
+
+6 / 7 challenges completed
+
+Strongest skill: Responsive Design
+
+Button:
+
+View Weekly Progress
+
+Open an expandable section/modal.
+
+28. COMMUNITY PREVIEW
+
+Show only 1–2 posts.
+
+Title:
+
+What Builders Are Creating
+
+Button:
+
+Explore Community
+
+Do not overload the dashboard.
+
+29. DAILY CHALLENGE WORKSPACE /day/12
+
+
+
+This is the main work screen.
+
+Purpo
+
+se:
+
+"What exactly am I supposed to buil
+
+d?"
+
+Then:
+
+"How do I prove I built
+
+ it?"
+
+30. WORKSPACE HEADER
+
+Show:
+
+← Dashboard
+
+DAY 12 OF 60
+
+🔥 11
+
+Status:
+
+In Progress
+
+Title:
+
+Build a Responsive Student Portfolio
+
+31. WORKSPACE SECTIONS
+
+Use:
+
+Today's Task Build Checklist Requirements AI Mentor Code Reviewer Need Help Proof of Work Quality Check Submit 
+
+Do NOT keep everything expanded.
+
+Use accordions/tabs for secondary sections.
+
+32. TODAY'S TASK
+
+Description:
+
+Create a mobile-first portfolio website for a college student. The portfolio should communicate who they are, what they can build, and how someone can contact them.
+
+33. BUILD CHECKLIST
+
+☐ Hero section ☐ About section ☐ Skills section ☐ 3 project cards ☐ Contact CTA ☐ Responsive mobile layout ☐ Deploy the website 
+
+Display:
+
+0 / 7 completed
+
+Update dynamically.
+
+34. AI MENTOR
+
+Create:
+
+🤖 AI Mentor
+
+Actions:
+
+Explain the Task
+
+Give Me a Hint
+
+Break It Into Steps
+
+What Should I Build First?
+
+I'm Stuck
+
+Use mock responses.
+
+Light mode:
+
+Blue-grey card + orange accent.
+
+Dark mode:
+
+Charcoal card + cyan accent.
+
+35. CODE REVIEWER
+
+Create a second tab:
+
+Code Reviewer
+
+Textarea:
+
+Paste your code here...
+
+Button:
+
+Review My Code
+
+Show mock response:
+
+Good
+
+Your responsive structure is present.
+
+Improve
+
+Consider using semantic HTML elements.
+
+Next Step
+
+Test the page at 390px width.
+
+36. CHALLENGE LEVEL
+
+Options:
+
+Beginner Intermediate Advanced 
+
+Changing the option updates the challenge guidance.
+
+37. NEED HELP
+
+Accordion:
+
+Need Help?
+
+Steps:
+
+Break the task into smaller pieces.
+
+Check documentation.
+
+Ask an AI coding assistant.
+
+Build the simplest working version.
+
+Improve it after it works.
+
+38. PROOF OF WORK
+
+Submit Your Proof
+
+GitHub Repository URL
+
+GitHub Commit URL
+
+LinkedIn Post URL
+
+Live Deployment URL
+
+Use proper validation.
+
+39. SUBMISSION CHECKLIST
+
+☐ GitHub repository is public ☐ GitHub commit contains today's work ☐ LinkedIn post published ☐ Live deployment works 
+
+Button:
+
+Submit Day 12
+
+40. SUCCESS STATE
+
+Show:
+
+🎉
+
+Day 12 Complete!
+
+Your work is now part of your 60-day journey.
+
+Display:
+
+GitHub ✓ LinkedIn ✓ Deployment ✓ 🔥 12 Day Streak 12 / 60 Days +300 XP 
+
+Buttons:
+
+Back to Dashboard
+
+Share My Progress
+
+41. XP / BADGES / LEADERBOARD
+
+Create a dedicated Progress section/modal.
+
+Show:
+
+2,450 XP
+
+Badges:
+
+First Build
+
+7-Day Builder
+
+First Deployment
+
+Build in Public
+
+10 Builds
+
+Leaderboard:
+
+#1 Aarav 3240 XP #2 Ananya 3050 XP #3 Rahul 2900 XP ... #18 Ajith 2450 XP 
+
+Clearly mark leaderboard as:
+
+Demo Data
+
+Do not make it dominate the main dashboard.
+
+42. COMMUNITY + BUILD-IN-PUBLIC
+
+Create a dedicated community feed.
+
+Title:
+
+What Builders Are Creating
+
+Example:
+
+Riya
+
+Day 12 — Responsive Portfolio
+
+Completed my portfolio challenge today.
+
+View Project
+
+Aarav
+
+Day 18 — Weather App
+
+Built and deployed a weather application.
+
+View Project
+
+Ananya
+
+Day 27 — AI Chatbot
+
+Built my first AI-powered project.
+
+View Project
+
+Use mock data.
+
+Do not make it addictive or social-media-like.
+
+Its purpose is:
+
+Learning visibility and inspiration.
+
+43. PORTFOLIO AUTO-BUILDER
+
+Show:
+
+Your Builds Become Your Portfolio
+
+Examples:
+
+Day 12 — Responsive Portfolio
+
+Day 18 — Weather App
+
+Day 27 — Data Dashboard
+
+Day 40 — AI Chatbot
+
+Button:
+
+Preview My Portfolio
+
+44. LINKEDIN GENERATOR
+
+After completing a challenge:
+
+Create Your LinkedIn Post
+
+Button:
+
+Generate with AI
+
+Actions:
+
+Copy
+
+Regenerate
+
+Edit
+
+Use mocked AI responses.
+
+45. RESUME BULLET GENERATOR
+
+Turn This Project Into a Resume Bullet
+
+Button:
+
+Generate Resume Bullet
+
+Example:
+
+Built and deployed a responsive student portfolio using HTML, CSS and JavaScript.
+
+Allow copy.
+
+46. SMART STREAK RECOVERY
+
+If a day is missed:
+
+Streak Recovery
+
+You missed one day. Your journey isn't over.
+
+Today: Complete today's challenge.
+
+Next: Return to your normal schedule.
+
+Progress matters more than perfection.
+
+47. MOBILE BOTTOM NAVIGATION
+
+At 390px:
+
+Home Challenge Progress Community
+
+
+
+Use theme-aware active states.
+
+Light:
+
+Orange
+
+Dark:
+
+Cyan
+
+Profile and theme controls remain in the header.
+
+48. DESKTOP NAVIGATION
+
+Desktop:
+
+ABTalks Dashboard Challenges Progress Community Theme Profile 
+
+Keep it clean and minimal.
+
+49. THEME TRANSITION
+
+When switching themes:
+
+Smoothly transition background
+
+Transition card backgrounds
+
+Transition borders
+
+Transition text
+
+Transition buttons
+
+Transition icons
+
+Transition progress bars
+
+Use a short, subtle transition.
+
+Do NOT flash the entire screen.
+
+50. ACCESSIBILITY
+
+The theme switcher must be accessible.
+
+Use:
+
+aria-label="Switch theme" 
+
+Buttons must have visible focus states.
+
+Do not rely only on color.
+
+For example:
+
+Completed:
+
+✓ Completed
+
+not just green.
+
+51. COMPONENT ARCHITECTURE
+
+Create reusable components:
+
+Navbar ThemeSwitcher MobileBottomNav Card Button Badge ProgressBar StreakCard ChallengeCard XPCard AchievementCard AI Mentor CodeReviewer CommunityCard Leaderboard Accordion Modal Toast Input Textarea Checkbox EmptyState SuccessState 
+
+The theme should be controlled globally.
+
+Use Tailwind theme classes/CSS variables rather than duplicating styles.
+
+52. CSS VARIABLES
+
+Create theme variables so the entire application can change cleanly.
+
+Example conceptual structure:
+
+--background --foreground --card --border --primary --primary-foreground --muted --accent --success --error 
+
+Light and dark themes should override these variables.
+
+This makes theme switching consistent.
+
+53. MOCK DATA
+
+Create:
+
+/data/student.json /data/challenges.json /data/days.json /data/submissions.json /data/achievements.json /data/xp.json /data/skills.json /data/community.json /data/leaderboard.json 
+
+Primary demo student:
+
+Ajith Web Development Day 12 / 60 11 Day Streak 2450 XP 
+
+Keep all data consistent.
+
+54. LOCAL STORAGE
+
+Persist:
+
+Selected theme
+
+Challenge progress
+
+XP
+
+Streak
+
+Checklist
+
+Submission URLs
+
+Achievements
+
+Challenge difficulty
+
+Reflections
+
+The theme MUST persist after refresh.
+
+55. IMPORTANT: NO MOMENTUM SCORE
+
+Do NOT use:
+
+82 / 100 Momentum Score
+
+Do not hardcode any Momentum Score.
+
+Instead use:
+
+XP
+
+Days completed
+
+Streak
+
+Completion percentage
+
+Achievements
+
+Weekly consistency
+
+Projects built
+
+56. 390PX MOBILE UX PRIORITY
+
+At 390px:
+
+The dashboard should approximately follow this visual hierarchy:
+
+ABTALKS 🔔 ☀/◐ 👤 Good evening, Ajith 🔥 11 day streak Day 12 / 60 ████████░░ 20% ┌───────────────────────┐ │ TODAY'S CHALLENGE │ │ │ │ Build a Responsive │ │ Student Portfolio │ │ │ │ 2–3 hours │ │ Intermediate │ │ │ │ [ Start Day 12 → ] │ └───────────────────────┘ This Week Achievements XP Community preview ────────────────────── Home Challenge Progress Community 
+
+Do not put more important information below several large cards.
+
+57. 11:30 PM UX PRINCIPLE
+
+The student is tired.
+
+The website must reduce cognitive load.
+
+The first screen after login should NOT ask:
+
+"Which feature would you like?"
+
+It should say:
+
+Day 12
+
+Here's today's challenge.
+
+Estimated time: 2–3 hours.
+
+Start Day 12 →
+
+Everything else is secondary.
+
+58. FINAL USER FLOW
+
+Implement this exact flow:
+
+New Student ↓ Landing Page ↓ Start Challenge ↓ Dashboard ↓ Today's Challenge ↓ Start Day 12 ↓ Daily Challenge Workspace ↓ Read Task ↓ Build ↓ AI Mentor if needed ↓ Code Reviewer if needed ↓ Add Proof ↓ Submit ↓ 🎉 Day Complete ↓ XP + Badge + Streak ↓ Dashboard ↓ Next Day 
+
+59. FINAL QUALITY CHECK
+
+Before finishing verify:
+
+✓ / works
+
+✓ /dashboard works
+
+✓ /day/12 works
+
+✓ Light Mode works
+
+✓ Dark Mode works
+
+✓ System Mode works if implemented
+
+✓ Theme persists after refresh
+
+✓ Theme persists between routes
+
+✓ 390px layout works
+
+✓ No horizontal scrolling
+
+✓ Landing page is clear
+
+✓ Dashboard is not overcrowded
+
+✓ Today's Challenge is dominant
+
+✓ Daily Challenge Workspace is clear
+
+✓ AI Mentor works
+
+✓ Code Reviewer works
+
+✓ XP works
+
+✓ Badges work
+
+✓ Leaderboard works
+
+✓ Community feed works
+
+✓ Build-in-public feed works
+
+
+
+✓ GitHub validation works
+
+✓ LinkedIn validation works
+
+✓ Deployment validation works
+
+✓ Submission works
+
+✓ Success state works
+
+✓ Streak recovery exists
+
+✓ Portfolio preview works
+
+✓ LinkedIn generator works
+
+✓ Resume bullet generator works
+
+✓ Certificate preview works
+
+✓ Mobile navigation works
+
+✓ Desktop navigation works
+
+✓ Toasts work
+
+✓ Modals work
+
+✓ Accordions work
+
+✓ LocalStorage works
+
+✓ Accessibility is implemented
+
+60. FINAL PRODUCT PRINCIPLE
+
+The product must NOT feel
+
+ like:
+
+"Here are 30 features. Figure it
+
+ out."
+
+It must fe
+
+el like:
+
+"You're on Day 12. Here's what you're building tonight. Let's get i
+
+t done."
+
+The core journey is:
+
+UNDERSTAND ↓ START ↓ BUILD ↓ GET HELP ↓ PROVE ↓ SUBMIT ↓ CELEBRATE ↓ COME BACK TOMORROW 
+
+Build the website as a premium, professional, mobile-first coding challenge platform.
+
+Default to the Light Blue-Grey + Orange theme.
+
+Give users the option to switch to the Charcoal + Cyan Dark Mode.
+
+Do not make the interface visually crowded.
+
+Every page must have a clear purpose.
+
+Every feature must have a clear place.
+
+At every step, the student should know:
+
+"What should I do next?"
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://ruchiabtalks.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/49f1afe5-ab09-4b3b-8fa8-8602f11bab15).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +1380,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
