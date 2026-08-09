@@ -65,9 +65,9 @@ function Dashboard() {
 
           {/* Streak */}
           <section className="surface-card p-4">
-            <div className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-3">
+            <div className="grid gap-3 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-start">
               <div className="min-w-0">
-                <p className="inline-flex items-center gap-2 text-base font-bold text-foreground">
+                <p className="inline-flex items-center gap-2 whitespace-nowrap text-base font-bold text-foreground">
                   <Flame className="h-4.5 w-4.5 shrink-0 text-primary" aria-hidden="true" />
                   {state.streak} day streak
                 </p>
@@ -75,7 +75,8 @@ function Dashboard() {
                   One more day to make it {state.streak + 1}.
                 </p>
               </div>
-              <ul className="flex shrink-0 gap-1.5">
+              <ul className="flex shrink-0 justify-between gap-1.5 sm:justify-end">
+
                 {weekDays.map((d, i) => (
                   <li
                     key={i}
