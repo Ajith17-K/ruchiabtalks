@@ -47,7 +47,7 @@ function read(): AppState {
   } catch {
     cache = initial();
   }
-  return cache;
+  return cache ?? initial();
 }
 
 function write(next: AppState) {
