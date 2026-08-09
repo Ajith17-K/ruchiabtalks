@@ -24,10 +24,10 @@ export const Route = createFileRoute("/")({
         content:
           "A 60-day coding challenge that turns daily practice into real projects, public proof, and a portfolio you can show.",
       },
-      { property: "og:title", content: "ABTalks — 60-Day Coding Challenge" },
+      { property: "og:title", content: "ABTalks — 60-Day Coding Challenge for Students" },
       {
         property: "og:description",
-        content: "Build every day. Become impossible to ignore. One practical challenge a day.",
+        content: "A 60-day coding challenge that turns daily practice into real projects, public proof, and a portfolio you can show.",
       },
     ],
   }),

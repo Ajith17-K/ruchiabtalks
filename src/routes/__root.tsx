@@ -79,20 +79,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "ABTalks — 60-Day Coding Challenge" },
+      { title: "ABTalks — 60-Day Coding Challenge for Students" },
       {
         name: "description",
         content:
-          "A 60-day coding challenge that turns daily practice into real projects and a portfolio you can show.",
+          "A 60-day coding challenge that turns daily practice into real projects, public proof, and a portfolio you can show.",
       },
       { name: "author", content: "ABTalks" },
-      { property: "og:title", content: "ABTalks — 60-Day Coding Challenge" },
+      { property: "og:title", content: "ABTalks — 60-Day Coding Challenge for Students" },
       {
         property: "og:description",
-        content: "Build every day. Become impossible to ignore.",
+        content: "A 60-day coding challenge that turns daily practice into real projects, public proof, and a portfolio you can show.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "ABTalks — 60-Day Coding Challenge for Students" },
+      { name: "twitter:description", content: "A 60-day coding challenge that turns daily practice into real projects, public proof, and a portfolio you can show." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/3ce0792c-c626-4cf3-869e-90eea3c7632f" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/3ce0792c-c626-4cf3-869e-90eea3c7632f" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
