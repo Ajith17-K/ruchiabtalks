@@ -201,7 +201,7 @@ function Workspace() {
                 ))}
               </div>
               <ul className="mt-3 space-y-1.5">
-                {guidanceByLevel[dayState.level].map((g) => (
+                {(guidanceByLevel[dayState.level] ?? []).map((g) => (
                   <li key={g} className="flex gap-2 text-sm text-muted-foreground">
                     <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-primary" />
                     {g}
@@ -299,7 +299,7 @@ function Workspace() {
                   {Object.keys(mentorResponses).map((q) => (
                     <button
                       key={q}
-                      onClick={() => setMentorAnswer(mentorResponses[q])}
+                      onClick={() => setMentorAnswer(mentorResponses[q] ?? "")}
                       className="min-h-11 rounded-lg border border-border bg-card px-3 text-left text-sm font-medium text-foreground hover:border-primary"
                     >
                       {q}
