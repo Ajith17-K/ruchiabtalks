@@ -31,7 +31,7 @@ export const emptyDay = (): DayState => ({
 const initial = (): AppState => ({
   xp: student.xp,
   streak: student.streak,
-  completedDays: student.currentDay - 1,
+  completedDays: student.currentDay,
   days: {},
 });
 
